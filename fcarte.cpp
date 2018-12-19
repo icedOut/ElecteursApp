@@ -35,6 +35,8 @@ std::istream& operator >> (std::istream& is, Carte& carte)
         countnoeuds++;
     }
 
+
+
     // Lire les routes
     while(is){
         std::string nomroute;
@@ -63,7 +65,6 @@ std::istream& operator >> (std::istream& is, Carte& carte)
         carte.ajouter_route(nomroute, listenomslieux);
         countroutes++;
     }
-        carte.getNoeuds();
     //std::cerr << "Carte chargée: " << countnoeuds << " noeuds; " << countroutes << " routes; " << countrefs << " références." << std::endl;
 
     return is;
